@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex-shrink</title>
+    <style>
+        .flex-container{
+            max-width: 350px;
+            border: 1px solid black;
+            margin-top: 5px;
+            display: flex;
+        }
+
+        .item{
+            background-color: chocolate;
+            color: snow;
+            text-align: center;
+            margin: 5px;
+            font-size: 24px;
+        }
+
+        .s-0{
+            flex-shrink: 0;
+        }
+
+        .s-1{
+            flex-shrink: 1;
+        }
+
+        .s-2{
+            flex-shrink: 2;
+            flex-basis: 200px;
+        }
+
+        .s-3{
+            flex-shrink: 3;
+            flex-basis: 200px;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <h3>flex-shrink 1 ex:01</h3>
+    <div class="flex-container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">E</div>
+    </div>
+
+    <h3>flex-shrink 1 ex:02</h3>
+    <div class="flex-container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">the generated lorem ipsum</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+    </div>
+
+    <h3>flex-shrink 0 (sem exigir compressão - os itens vazam)</h3>
+    <div class="flex-container">
+        <div class="item s-0 fg-1">A</div>
+        <div class="item s-0 fg-1">the generated lorem ipsum</div>
+        <div class="item s-0 fg-1">C</div>
+        <div class="item s-0 fg-1">D</div>
+    </div>
+
+    <h3>flex-shrink 2</h3>
+    <div class="flex-container">
+        <div class="item s-2 fg-1">A</div>
+        <div class="item s-2 fg-1">the generated lorem ipsum</div>
+        <div class="item s-2 fg-1">the generated lorem ipsum</div>
+        <div class="item s-2 fg-1">the generated lorem ipsum</div>
+    </div>
+
+    <h3>flex-shrink 3</h3>
+    <div class="flex-container">
+        <div class="item s-3 fg-1">A</div>
+        <div class="item s-3 fg-1">the generated lorem ipsum</div>
+        <div class="item s-3 fg-1">C</div>
+        <div class="item s-3 fg-1">D</div>
+    </div>
+</body>
+</html>

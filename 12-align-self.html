@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align-self</title>
+    <style>
+        .flex-container{
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            display: flex;
+            /* align-items: center; */
+        }
+
+        .item{
+            flex: 1;
+            background-color: chocolate;
+            color: snow;
+            text-align: center;
+            margin: 5px;
+            font-size: 24px;
+            }
+
+        .align-container{
+            align-items: center
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+       </style>
+</head>
+<body>
+
+    <h2>ROW</h2>
+    
+    <h3>Auto</h3>
+    <section class="flex-container align-container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item auto">ITEM 04</div>
+    </section>
+
+    <h3>Center</h3>
+    <section class="flex-container">
+        <div class="item center">AAA</div>
+        <div class="item center">123</div>
+        <div class="item center">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item center">ITEM 04</div>
+    </section>
+
+    <h3>Start</h3>
+    <section class="flex-container">
+        <div class="item start">AAA</div>
+        <div class="item start">123</div>
+        <div class="item start">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item start">ITEM 04</div>
+    </section>
+
+    <h3>End</h3>
+    <section class="flex-container">
+        <div class="item end">AAA</div>
+        <div class="item end">123</div>
+        <div class="item end">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item end">ITEM 04</div>
+    </section>
+
+    <h3>Baseline</h3>
+    <section class="flex-container">
+        <div class="item baseline">AAA</div>
+        <div class="item baseline">123</div>
+        <div class="item baseline">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item baseline">ITEM 04</div>
+    </section>
+
+    <h3>Stretch</h3>
+    <section class="flex-container">
+        <div class="item stretch">AAA</div>
+        <div class="item stretch">123</div>
+        <div class="item stretch">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item stretch">ITEM 04</div>
+    </section>
+
+    <h3>Mix</h3>
+    <section class="flex-container">
+        <div class="item stretch">AAA</div>
+        <div class="item start">123</div>
+        <div class="item center">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item end">ITEM 04</div>
+        <div class="item baseline">Outro item</div>
+    </section>
+
+    <h2>COLUMN</h2>
+
+    <h3>Auto</h3>
+    <section class="flex-container align-container column">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item auto">ITEM 04</div>
+    </section>
+
+    <h3>Center</h3>
+    <section class="flex-container column">
+        <div class="item center">AAA</div>
+        <div class="item center">123</div>
+        <div class="item center">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item center">ITEM 04</div>
+    </section>
+
+    <h3>Start</h3>
+    <section class="flex-container column">
+        <div class="item start">AAA</div>
+        <div class="item start">123</div>
+        <div class="item start">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item start">ITEM 04</div>
+    </section>
+
+    <h3>End</h3>
+    <section class="flex-container column">
+        <div class="item end">AAA</div>
+        <div class="item end">123</div>
+        <div class="item end">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item end">ITEM 04</div>
+    </section>
+
+    <h3>Baseline</h3>
+    <section class="flex-container column">
+        <div class="item baseline">AAA</div>
+        <div class="item baseline">123</div>
+        <div class="item baseline">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item baseline">ITEM 04</div>
+    </section>
+
+    <h3>Stretch</h3>
+    <section class="flex-container column">
+        <div class="item stretch">AAA</div>
+        <div class="item stretch">123</div>
+        <div class="item stretch">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item stretch">ITEM 04</div>
+    </section>
+
+    <h3>Mix</h3>
+    <section class="flex-container column">
+        <div class="item stretch">AAA</div>
+        <div class="item start">123</div>
+        <div class="item center">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item end">ITEM 04</div>
+        <div class="item baseline">Outro item</div>
+    </section>
+</body>
+</html>
